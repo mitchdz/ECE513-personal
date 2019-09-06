@@ -8,3 +8,46 @@ h1 {
 	margin: 5px;
 	font-size: 10px;
 }
+
+.offer {
+	display:inline-block;
+	width: 400px;
+	margin: 4px;
+	text-align: center;
+
+	border: 1px;
+	border-color: #cccccc;
+	border-radius: 1px;
+	box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+}
+
+.offerTitle {
+	font-style: bold;
+	font-size: 11px;
+	background: #00b3b3;
+	margin: 0px;
+	padding: 15px;
+}
+
+div.offerContents {
+	padding: 20px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: #fafafa;
+}
+
+table {
+	width: 100%;
+	background-color: #ffffff;
+	border-spacing: 0px;
+	box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+
+
+}
+
+
+
+.finalValue {
+	font-weight: bold;
+	color: #2222ff;
+}
