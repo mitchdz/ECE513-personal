@@ -1,12 +1,13 @@
 h1 {
-	font-size: 12px;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 12pt;
 	color:#444444;
 }
 
 .container {
 	text-align: center;
 	margin: 5px;
-	font-size: 10px;
+	font-size: 10pt;
 }
 
 .offer {
@@ -23,7 +24,7 @@ h1 {
 
 .offerTitle {
 	font-style: bold;
-	font-size: 11px;
+	font-size: 11pt;
 	background: #00b3b3;
 	margin: 0px;
 	padding: 15px;
@@ -41,11 +42,26 @@ table {
 	background-color: #ffffff;
 	border-spacing: 0px;
 	box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
-
-
 }
 
+th, td {
+	text-align: left;
+	border-bottom: 1px solid #f1f1f1;
+}
 
+th {
+	font-style: bold;
+	font-size: 9pt;
+	color: #777777;
+	padding: 10px;
+	margin: 0px;
+}
+
+td {
+	font-weight: lighter;
+	color: #444444;
+	padding: 20px 10px 20px 10px;
+}
 
 .finalValue {
 	font-weight: bold;
