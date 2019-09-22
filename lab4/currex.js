@@ -187,4 +187,47 @@ var exchangeRates = {
   }
 };
 
-/* Your solution goes here */
+function populateToCurrencySelect() {
+  let toCurrency = document.getElementById("toCurrency");
+  toCurrency.innerHTML = "";
+  toCurrency.innerHTML+='<option value="" disabled selected>Select currency</option>';
+
+  for (var abbrev in exchangeRates.rates) {
+    let fullname = allCurrencies[abbrev];
+    let optionString = "";
+    optionString += '<option value="' + abbrev + '">' + fullname + " (" + abbrev + ')</option>';
+    toCurrency.innerHTML+=optionString;
+  }
+  $('select').formSelect();
+}
+
+document.addEventListener("DOMContentLoaded", populateToCurrencySelect);
+
+document.getElementById("toCurrency").addEventListener("change", (event) => {
+  let toCurrency = document.getElementById("toCurrency").value;
+  let userInput = document.getElementById("usdInput").value;
+  let conversionRate = exchangeRates.rates[toCurrency];
+
+  let resultCurrencyInput = document.getElementById("resultCurrency");
+  // round to 2 decimal places
+  let result = parseFloat(Math.round((userInput * conversionRate) * 100) / 100).toFixed(2);
+  resultCurrencyInput.value = result;
+
+  let fullname = allCurrencies[toCurrency];
+  labelHTML = fullname + " (" + toCurrency + "):";
+  let resultLabel = document.getElementById("resultLabel");
+  resultLabel.innerHTML = labelHTML;
+});
+
+
+document.getElementById("updateRates").addEventListener("click", (event) => {
+  exchangeRates = JSON.parse(document.getElementById("exchangeRates").value);
+
+  // Reset resultCurrency input and label values
+  let resultCurrencyInput = document.getElementById("resultCurrency");
+  resultCurrencyInput.value = "---.--";
+  let resultLabel = document.getElementById("resultLabel");
+  resultLabel.innerHTML = "To Currency ():";
+
+  populateToCurrencySelect();
+});
