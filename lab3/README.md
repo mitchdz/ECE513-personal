@@ -11,10 +11,10 @@ The webpage styling should be close to the following. Note: Specific styles list
 	- Password \<input> element with ID passwordConfirm and label "Confirm Password"
 	- Submit \<input> element with ID submit and value "Register"
 	- The default border for the text, email, and password \<input> elements should be 1 pixel, solid, with color #aaa
-	- Do not use a <form> element. Instead, use a <div> with class form
+	- Do not use a \<form> element. Instead, use a \<div> with class form
 
-2. <div> for errors: Create a <div> with ID formErrors that will be used to display any validation errors.
-	- Initially the <div> should not be displayed (i.e., the display style should be none)
+2. \<div> for errors: Create a \<div> with ID formErrors that will be used to display any validation errors.
+	- Initially the \<div> should not be displayed (i.e., the display style should be none)
 
 3. Form validation: Define a click event listener for the \<input> element with ID submit that verifies the user provided information is valid.
   - If there are form validation errors,
@@ -23,7 +23,7 @@ The webpage styling should be close to the following. Note: Specific styles list
     - Each \<input> element with the invalid input should be styled with a 2 pixel, red, solid border.
       - Otherwise, the default border should be used (1 pixel, solid, with color #aaa)
   - If there are no form validation errors,
-    - The formErrors <div> should not be shown (i.e., the display style should be none)
+    - The formErrors \<div> should not be shown (i.e., the display style should be none)
     - All text, email, and password \<input> elements should use the default border of 1 pixel, solid, color #aaa
   - Perform the following form validations in the order provided and display all error messages that apply
     - Ensure a full name with a length greater than or equal to 1 was provided
