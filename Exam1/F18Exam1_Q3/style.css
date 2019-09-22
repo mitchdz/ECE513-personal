@@ -1,0 +1,35 @@
+.Figure{
+
+}
+
+.Title {
+	display:inline-block;
+}
+
+.Header {
+	background-color = rgb(230, 230, 230);
+}
+
+.Contents {
+
+}
+
+.Label {
+	display:inline-block;
+	width:20%;
+	border-left: 5px;
+	border-left-color: teal;
+	border-right: 2px;
+	border-right-color:darkgray;
+	text-transform: bold uppercase;
+}
+
+p {
+
+
+}
+
+aside {
+
+
+}
