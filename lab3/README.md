@@ -18,8 +18,8 @@ The webpage styling should be close to the following. Note: Specific styles list
 
 3. Form validation: Define a click event listener for the \<input> element with ID submit that verifies the user provided information is valid.
   - If there are form validation errors,
-    - The formErrors <div> should be shown by setting display to block
-    - Each of the associated error messages should be displayed in the formErrors <div> using an unordered list with red text. The error message must be displayed in the order the validation is performed, following the order specified below.
+    - The formErrors \<div> should be shown by setting display to block
+    - Each of the associated error messages should be displayed in the formErrors \<div> using an unordered list with red text. The error message must be displayed in the order the validation is performed, following the order specified below.
     - Each \<input> element with the invalid input should be styled with a 2 pixel, red, solid border.
       - Otherwise, the default border should be used (1 pixel, solid, with color #aaa)
   - If there are no form validation errors,
