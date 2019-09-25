@@ -1,5 +1,5 @@
 .Figure{
-
+	
 }
 
 .Title {
@@ -7,21 +7,23 @@
 }
 
 .Header {
-	background-color = rgb(230, 230, 230);
+	background-color: rgb(230, 230, 230);
+	border-left:5px solid teal;	
+
 }
 
 .Contents {
-
+	float: left;
 }
 
 .Label {
 	display:inline-block;
 	width:20%;
-	border-left: 5px;
-	border-left-color: teal;
-	border-right: 2px;
-	border-right-color:darkgray;
+	border-right:2px solid darkgray;
 	text-transform: bold uppercase;
+	margin: 5px;
+	padding: 5px;
+
 }
 
 p {
@@ -30,6 +32,10 @@ p {
 }
 
 aside {
-
-
+	width: 150px;
+	float: left;
+	margin: 15px;
+	border-left: 6px solid green;
+	border-top: 2px solid green;
+	padding: 5px;
 }
