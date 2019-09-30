@@ -1,0 +1,12 @@
+beep
+getFlightStatus() {
+	var fc = document.getElementById("flightCode").value;
+	var fd = document.getElemenyById("flightDate").value;
+
+   var xhr = new XMLHttpRequest();
+   xhr.addEventListener("load", flightStatusResponse);
+   xhr.responseType = "json";
+   var queryString = "?flightcode=" + fc + "?flightDate=" + fc;
+   xhr.open("GET", 'https://notareal.site/flightstatus'+ queryString);
+   xhr.send();
+}
